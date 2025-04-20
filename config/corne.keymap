@@ -20,14 +20,6 @@
 #define ADJ 3
 #define EXTRA 4
 
-z_ctrl: z_ctrl {
-  compatible = "zmk,behavior-hold-tap";
-  label = "Z_CTRL";
-  flavor = "tap-preferred";
-  tapping-term-ms = <160>;
-  hold-trigger-key-press;
-  bindings = <&kp Z>, <&mod LCTRL>;
-};
 
 / {
   combos {
@@ -92,7 +84,7 @@ z_ctrl: z_ctrl {
       bindings = <
         &kp ESCAPE    &kp Q     &kp W     &kp E     &kp R     &kp T     &kp Y     &kp U     &kp I     &kp O     &kp P     &kp DELETE
         &kp TAB       &kp A     &kp S     &kp D     &kp F     &kp G     &kp H     &kp J     &kp K     &kp L     &kp SEMI  &kp F8
-        &kp LEFT_SHIFT &z_ctrl  &kp X     &kp C     &kp V     &kp B     &kp N     &kp M     &kp COMMA &kp DOT   &kp SLASH &kp QUOTE
+        &kp LEFT_SHIFT &mt LCTRL Z  &kp X     &kp C     &kp V     &kp B     &kp N     &kp M     &kp COMMA &kp DOT   &kp SLASH &kp QUOTE
                         &kp LEFT_ALT &kp LEFT_GUI &kp SPACE &kp ENTER &kp RIGHT_GUI &mo SYS
       >;
     };
