@@ -33,8 +33,32 @@ z_ctrl: z_ctrl {
   combos {
     compatible = "zmk,combos";
 
-    // === Navigation ===
+    // === Navigation Combos ===
     combo_left_lh { bindings = <&kp LEFT>; key-positions = <13 14>; timeout-ms = <40>; slow-release; };
+    combo_right_lh { bindings = <&kp RIGHT>; key-positions = <15 14>; timeout-ms = <40>; slow-release; };
+    combo_up_lh { bindings = <&kp UP>; key-positions = <15 12>; timeout-ms = <40>; slow-release; };
+    combo_down_lh { bindings = <&kp DOWN>; key-positions = <20 14>; timeout-ms = <40>; slow-release; };
+    combo_left_rh { bindings = <&kp LEFT>; key-positions = <23 24>; timeout-ms = <40>; slow-release; };
+    combo_right_rh { bindings = <&kp RIGHT>; key-positions = <25 24>; timeout-ms = <40>; slow-release; };
+    combo_up_rh { bindings = <&kp UP>; key-positions = <23 22>; timeout-ms = <40>; slow-release; };
+    combo_down_rh { bindings = <&kp DOWN>; key-positions = <26 24>; timeout-ms = <40>; slow-release; };
+
+    // === Utility Combos ===
+    combo_backspace { bindings = <&kp BACKSPACE>; key-positions = <16 15>; timeout-ms = <40>; slow-release; }; // G + F
+    combo_return { bindings = <&kp RETURN>; key-positions = <20 21>; timeout-ms = <40>; slow-release; };     // B + V
+
+    // === Number Combos ===
+    combo_num_1 { bindings = <&kp N1>; key-positions = <0 1>; timeout-ms = <40>; slow-release; };
+    combo_num_2 { bindings = <&kp N2>; key-positions = <1 2>; timeout-ms = <40>; slow-release; };
+    combo_num_3 { bindings = <&kp N3>; key-positions = <2 3>; timeout-ms = <40>; slow-release; };
+    combo_num_4 { bindings = <&kp N4>; key-positions = <4 3>; timeout-ms = <40>; slow-release; };
+    combo_num_5 { bindings = <&kp N5>; key-positions = <4 5>; timeout-ms = <40>; slow-release; };
+    combo_num_6 { bindings = <&kp N6>; key-positions = <6 7>; timeout-ms = <40>; slow-release; };
+    combo_num_7 { bindings = <&kp N7>; key-positions = <7 8>; timeout-ms = <40>; slow-release; };
+    combo_num_8 { bindings = <&kp N8>; key-positions = <8 9>; timeout-ms = <40>; slow-release; };
+    combo_num_9 { bindings = <&kp N9>; key-positions = <9 10>; timeout-ms = <40>; slow-release; };
+    combo_num_0 { bindings = <&kp N0>; key-positions = <11 10>; timeout-ms = <40>; slow-release; };
+};
     combo_right_lh { bindings = <&kp RIGHT>; key-positions = <15 14>; timeout-ms = <40>; slow-release; };
     combo_up_lh { bindings = <&kp UP>; key-positions = <15 12>; timeout-ms = <40>; slow-release; };
     combo_down_lh { bindings = <&kp DOWN>; key-positions = <20 14>; timeout-ms = <40>; slow-release; };
