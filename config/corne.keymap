@@ -5,9 +5,8 @@
  * - SYS = 1 (System/media layer)
  * - Combos for navigation, editing, and symbols
  * - Key assignments:
- *    - G+F = Return, B+V = Backspace
+ *    - G+F = Backspace, B+V = Return
  *    - Esc+Q = 1 → ... → DEL+P = 0
- *    - X+C = Copy, V+C = Paste, Z+X = Cut
  *    - SYS layer: media controls and multiple studio_unlock keys
  */
 
@@ -45,8 +44,8 @@ z_ctrl: z_ctrl {
     combo_down_rh { bindings = <&kp DOWN>; key-positions = <26 24>; timeout-ms = <40>; slow-release; };
 
     // === Utility ===
-    combo_return { bindings = <&kp RETURN>; key-positions = <16 15>; timeout-ms = <40>; slow-release; };
-    combo_backspace { bindings = <&kp BACKSPACE>; key-positions = <20 21>; timeout-ms = <40>; slow-release; };
+    combo_backspace { bindings = <&kp BACKSPACE>; key-positions = <16 15>; timeout-ms = <40>; slow-release; }; // G + F
+    combo_return { bindings = <&kp RETURN>; key-positions = <20 21>; timeout-ms = <40>; slow-release; };     // B + V
 
     // === Numbers ===
     combo_num_1 { bindings = <&kp N1>; key-positions = <0 1>; timeout-ms = <40>; slow-release; };
@@ -59,11 +58,6 @@ z_ctrl: z_ctrl {
     combo_num_8 { bindings = <&kp N8>; key-positions = <8 9>; timeout-ms = <40>; slow-release; };
     combo_num_9 { bindings = <&kp N9>; key-positions = <9 10>; timeout-ms = <40>; slow-release; };
     combo_num_0 { bindings = <&kp N0>; key-positions = <11 10>; timeout-ms = <40>; slow-release; };
-
-    // === Editing ===
-    combo_copy { bindings = <&kp C_COPY>; key-positions = <28 29>; timeout-ms = <40>; slow-release; };     // X + C
-    combo_paste { bindings = <&kp C_PASTE>; key-positions = <30 29>; timeout-ms = <40>; slow-release; };   // V + C
-    combo_cut { bindings = <&kp C_CUT>; key-positions = <27 28>; timeout-ms = <40>; slow-release; };       // Z + X
   };
 
   keymap {
