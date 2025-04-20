@@ -31,10 +31,10 @@
         SYS {
             display-name = "System";
             bindings = <
-&trans  &trans  &trans  &trans          &trans  &trans    &kp C_PREVIOUS     &kp C_PLAY_PAUSE  &kp C_NEXT  &kp C_VOL_DOWN  &kp C_VOL_UP  &kp C_MUTE
-&trans  &trans  &trans  &trans          &trans  &trans    &trans             &trans            &trans      &trans          &trans        &trans
-&trans  &trans  &trans  &studio_unlock  &trans  &trans    &trans             &trans            &trans      &trans          &trans        &trans
-                        &trans          &trans  &trans    &kp studio_unlock  &trans            &trans
+&trans  &trans  &trans  &trans  &trans  &trans    &kp C_PREVIOUS  &kp C_PLAY_PAUSE  &kp C_NEXT  &kp C_VOLUME_DOWN  &kp C_VOL_UP  &kp C_MUTE
+&trans  &trans  &trans  &trans  &trans  &trans    &trans          &trans            &trans      &trans             &trans        &trans
+&trans  &trans  &trans  &trans  &trans  &trans    &trans          &trans            &trans      &trans             &trans        &trans
+                        &trans  &trans  &trans    &trans          &studio_unlock    &trans
             >;
         };
     };
